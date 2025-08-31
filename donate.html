@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - חשן</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: gradientMove 12s ease-in-out infinite alternate;
+        }
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .donate-container {
+            background: rgba(255,255,255,0.95);
+            border-radius: 32px;
+            box-shadow: 0 10px 40px rgba(30, 58, 138, 0.18);
+            padding: 3rem 2rem 2.5rem 2rem;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+        .donate-container::before {
+            content: '';
+            position: absolute;
+            top: -30px; left: 50%;
+            transform: translateX(-50%);
+            width: 80px; height: 80px;
+            background: url('logo.jpeg') no-repeat center center / contain;
+            border-radius: 50%;
+            box-shadow: 0 4px 24px rgba(30,58,138,0.12);
+        }
+        .donate-title {
+            font-size: 2.3rem;
+            font-weight: 900;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            margin-top: 2.5rem;
+            letter-spacing: 1px;
+        }
+        .donate-desc {
+            font-size: 1.15rem;
+            color: #374151;
+            margin-bottom: 2rem;
+        }
+        .donate-input {
+            width: 90%;
+            max-width: 350px;
+            padding: 1rem;
+            font-size: 1.25rem;
+            border-radius: 16px;
+            border: 1.5px solid #3b82f6;
+            margin-bottom: 1.5rem;
+            outline: none;
+            transition: border 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 8px rgba(59,130,246,0.08);
+            text-align: center;
+            padding-right: 1rem;
+            padding-left: 1.5rem;
+        }
+        .donate-input:focus {
+            border: 2px solid #1e3a8a;
+            box-shadow: 0 4px 16px rgba(59,130,246,0.12);
+        }
+        .donate-btn {
+            background: linear-gradient(45deg, #f59e0b, #f97316);
+            color: white;
+            font-weight: 700;
+            font-size: 1.25rem;
+            border: none;
+            border-radius: 50px;
+            padding: 1rem 2.5rem;
+            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(245, 158, 11, 0.18);
+            transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+        .donate-btn:hover {
+            background: linear-gradient(45deg, #f97316, #f59e0b);
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 12px 32px rgba(245, 158, 11, 0.22);
+        }
+        .donate-footer {
+            margin-top: 2.2rem;
+            font-size: 1rem;
+            color: #6b7280;
+        }
+        @media (max-width: 600px) {
+            .donate-container {
+                padding: 2rem 0.5rem 2rem 0.5rem;
+                max-width: 98vw;
+            }
+            .donate-title {
+                font-size: 1.5rem;
+            }
+            .donate-desc {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="donate-container">
+        <div class="donate-title">Support Our Mission</div>
+        <div class="donate-desc">Your donation helps empower Israeli women with safety training, equipment, and ongoing support. Every shekel makes a difference!</div>
+        <form id="donateForm" action="https://www.paypal.com/donate" method="get" target="_blank">
+            <input type="number" name="amount" class="donate-input" min="1" step="1" placeholder="Enter amount (₪)" required>
+            <button type="submit" class="donate-btn">Donate Now</button>
+        </form>
+        <div class="donate-footer">
+            All donations go directly to training programs, equipment, and support services.<br>
+            Thank you for your generosity!
+        </div>
+    </div>
+</body>
+</html>
