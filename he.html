@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>חשן - העצמת נשים ישראליות בביטחון אישי</title>
+    <style>
+        body {
+            font-family: 'Heebo', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+            min-height: 100vh;
+            margin: 0;
+            direction: rtl;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #374151;
+            font-weight: 500;
+        }
+        .nav-links a:hover {
+            color: #1e3a8a;
+        }
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+        }
+        .hero-content {
+            background: rgba(255,255,255,0.95);
+            border-radius: 32px;
+            box-shadow: 0 10px 40px rgba(30, 58, 138, 0.18);
+            padding: 3rem 2rem;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+        .hero-desc {
+            font-size: 1.2rem;
+            color: #374151;
+            margin-bottom: 2rem;
+        }
+        .cta-btn {
+            background: linear-gradient(45deg, #f59e0b, #f97316);
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(245, 158, 11, 0.15);
+            transition: background 0.3s, transform 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .cta-btn:hover {
+            background: linear-gradient(45deg, #f97316, #f59e0b);
+            transform: translateY(-2px);
+        }
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 2rem 0 1rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .footer-bottom {
+            color: #9ca3af;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 700px) {
+            .hero-content {
+                padding: 2rem 0.5rem;
+            }
+            .hero-title {
+                font-size: 1.5rem;
+            }
+            .hero-desc {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="logo.jpeg" alt="לוגו חשן" style="height: 40px; vertical-align: middle; margin-left: 8px;">
+                חשן
+            </div>
+            <ul class="nav-links">
+                <li><a href="#mission">המשימה שלנו</a></li>
+                <li><a href="#programs">תכניות</a></li>
+                <li><a href="#impact">השפעה</a></li>
+                <li><a href="hedonate.html">תרומה</a></li>
+                <li><a href="index.html" style="font-weight:700; color:#f59e0b;">English</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-title">חיבור • שורשים • נצח</div>
+            <div class="hero-desc">בעקבות אירועי 7 באוקטובר, אנו מחויבים להעצים נשים ישראליות באמצעות הכשרה מקיפה בנשק, חינוך לבטיחות, ובניית ביטחון עצמי להגנה על עצמן ועל הקהילה.</div>
+            <a href="hedonate.html" class="cta-btn">תרמו עכשיו</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-bottom">
+            &copy; 2025 חשן. כל הזכויות שמורות. עמותה רשומה בישראל
+        </div>
+    </footer>
+</body>
+</html>
